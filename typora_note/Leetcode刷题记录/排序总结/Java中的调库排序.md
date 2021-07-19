@@ -45,6 +45,33 @@ int nums[]=new int[]{2,5,3,8,6,7,0,13,65,3,7};
         Collections.sort(nums2, Collections.reverseOrder());
         System.out.println(nums2);
 
+Collections.sort(intList,new Comparator<Integer>() {
+
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                // 返回值为int类型，大于0表示正序，小于0表示逆序
+                return o2.compareTo(o1);
+              
+              //最好 还是用。
+            }
+        });
+
+
+Collections.sort(empList,new Comparator<Emp>() {
+
+            @Override
+            public int compare(Emp o1, Emp o2) {
+                /*按员工编号正序排序*/
+                return o1.getEmpno()-o2.getEmpno();
+                /*按员工编号逆序排序*/
+                //return o2.getEmpno()-o1.getEmpno();
+                /*按员工姓名正序排序*/
+                //return o1.getEname().compareTo(o2.getEname());
+                /*按员工姓名逆序排序*/
+                //return o2.getEname().compareTo(o1.getEname());
+            }
+        });
+
 ```
 
 方法2：直接新建个数组，然后从头到尾赋值就完事了
