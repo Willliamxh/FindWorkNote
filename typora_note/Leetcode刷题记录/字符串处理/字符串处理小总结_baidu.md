@@ -126,6 +126,15 @@ int[] array ={1,2,3,4,5,6,7,8,9,10};
 char[] chars = str.toCharArray();
 ```
 
+###  1.3集合转化为数组
+
+```java
+List<String> list = new ArrayList<>(2);
+list.add("guan");
+list.add("bao");
+String[] array = list.toArray(new String[0]);
+```
+
 
 
 
@@ -397,7 +406,6 @@ ytshello doog
 String s="123abc";
 　　System.out.println(new StringBuilder(s).reverse().toString());
 ```
-
 
 
 
