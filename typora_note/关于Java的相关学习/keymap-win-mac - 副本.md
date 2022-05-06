@@ -85,7 +85,7 @@
 |:---------|:---------|:---------|
 |<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>L</kbd>|<kbd>Command</kbd> + <kbd>Option</kbd> + <kbd>L</kbd>|格式化代码，可以对当前文件和整个包目录使用|
 |<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>O</kbd>|<kbd>Control</kbd> + <kbd>Option</kbd> + <kbd>O</kbd>|优化导入的类，可以对当前文件和整个包目录使用|
-|<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd>|<kbd>Command</kbd> + <kbd>Option</kbd> + <kbd>T</kbd>|对选中的代码弹出环绕选项弹出层|
+|<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd>|<kbd>Command</kbd> + <kbd>Option</kbd> + <kbd>T</kbd>|对选中的代码弹出环绕选项弹出层 try catch|
 |<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>|<kbd>Command</kbd> + <kbd>逗号</kbd>|打开 IntelliJ IDEA 系统设置|
 |<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Enter</kbd>|<kbd>Command</kbd> + <kbd>Option</kbd> + <kbd>Enter</kbd>|光标所在行上空出一行，光标定位到新行|
 |<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>左方向键</kbd>|<kbd>Command</kbd> + <kbd>Option</kbd> + <kbd>左方向键</kbd>|退回到上一个操作的地方|
@@ -147,3 +147,9 @@
 |<kbd>F12</kbd>|<kbd>F12</kbd>|回到前一个工具窗口|
 |<kbd>Tab</kbd>|<kbd>Tab</kbd>|缩进|
 |<kbd>ESC</kbd>|<kbd>ESC</kbd>|从工具窗口进入代码文件窗口|
+
+
+
+显示继承结构
+
+crtl + H mac和win一样
