@@ -155,5 +155,18 @@ EE-net的同条件对比实验在上海以及miccai数据的结果已经全部�
 
 
 
+![image-20220722172644034](/Users/xuhan/Library/Application Support/typora-user-images/image-20220722172644034.png)
 
+![image-20220722172655187](/Users/xuhan/Library/Application Support/typora-user-images/image-20220722172655187.png)
 
+![image-20220722172710296](/Users/xuhan/Library/Application Support/typora-user-images/image-20220722172710296.png)
+
+![image-20220722172726513](/Users/xuhan/Library/Application Support/typora-user-images/image-20220722172726513.png)
+
+![image-20220722172746706](/Users/xuhan/Library/Application Support/typora-user-images/image-20220722172746706.png)
+
+![image-20220722172807890](/Users/xuhan/Library/Application Support/typora-user-images/image-20220722172807890.png)
+
+![image-20220722172901957](/Users/xuhan/Library/Application Support/typora-user-images/image-20220722172901957.png)
+
+![image-20220722172917016](/Users/xuhan/Library/Application Support/typora-user-images/image-20220722172917016.png)

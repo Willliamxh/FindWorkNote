@@ -503,3 +503,26 @@ public int compare(Map.Entry<String,Integer>e1,Map.Entry<String,Integer>e2){
                 else{return e1.getValue().compareTo(e2.getValue());}
             }
 ```
+
+
+
+## Map按value排序——stream流
+
+```java
+ Map<Integer, Integer> map = new HashMap<>();
+
+        map.put(1,11);
+        map.put(2,22);
+        map.put(3,33);
+        map.put(4,44);
+        map.put(5,44);
+        map.put(6,11);
+
+//按照map的value进行排序，并返回最后的value的降序的集合(升序只需要entry2和entry1换个位置即可)
+ List<Integer> collect = map.entrySet().stream()
+                .sorted((entry1, entry2) -> entry2.getValue().compareTo(entry1.getValue()))
+                .map(entry -> entry.getKey())
+                .collect(Collectors.toList());
+        System.out.println(collect);
+```
+
