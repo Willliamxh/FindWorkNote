@@ -16,7 +16,7 @@ DRY原则的定义非常简单，我就不再过度解读。今天，我们主�
 
 我们先来看下面这样一段代码是否违反了DRY原则。如果违反了，你觉得应该如何重构，才能让它满足DRY原则？如果没有违反，那又是为什么呢？
 
-```
+```java
 public class UserAuthenticator {
   public void authenticate(String username, String password) {
     if (!isValidUsername(username)) {
@@ -81,7 +81,7 @@ public class UserAuthenticator {
 
 代码很简单，我就不做过多解释了。在代码中，有两处非常明显的重复的代码片段：isValidUserName()函数和isValidPassword()函数。重复的代码被敲了两遍，或者简单copy-paste了一下，看起来明显违反DRY原则。为了移除重复的代码，我们对上面的代码做下重构，将isValidUserName()函数和isValidPassword()函数，合并为一个更通用的函数isValidUserNameOrPassword()。重构后的代码如下所示：
 
-```
+```java
 public class UserAuthenticatorV2 {
 
   public void authenticate(String userName, String password) {

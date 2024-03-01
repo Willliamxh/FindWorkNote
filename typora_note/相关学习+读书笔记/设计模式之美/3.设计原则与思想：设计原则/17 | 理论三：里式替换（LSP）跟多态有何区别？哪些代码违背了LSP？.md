@@ -20,7 +20,7 @@
 
 这么说还是比较抽象，我们通过一个例子来解释一下。如下代码中，父类Transporter使用org.apache.http库中的HttpClient类来传输网络数据。子类SecurityTransporter继承父类Transporter，增加了额外的功能，支持传输appId和appToken安全认证信息。
 
-```
+```java
 public class Transporter {
   private HttpClient httpClient;
   
@@ -74,7 +74,7 @@ demo.demofunction(new SecurityTransporter(/*省略参数*/););
 
 我们还是通过刚才这个例子来解释一下。不过，我们需要对SecurityTransporter类中sendRequest()函数稍加改造一下。改造前，如果appId或者appToken没有设置，我们就不做校验；改造后，如果appId或者appToken没有设置，则直接抛出NoAuthorizationRuntimeException未授权异常。改造前后的代码对比如下所示：
 
-```
+```java
 // 改造前：
 public class SecurityTransporter extends Transporter {
   //...省略其他代码..
